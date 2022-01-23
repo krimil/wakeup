@@ -15,7 +15,7 @@ COPY --from=builder /go/bin /opt/wakeup
 
 RUN touch /opt/wakeup/wakeup-cache
 
-EXPOSE 8080
+EXPOSE 8580
 
 CMD ["-c" ,"/opt/wakeup/wakeup-cache","-s","/opt/wakeup/static"]
 ENTRYPOINT [ "/opt/wakeup/wakeup" ]
