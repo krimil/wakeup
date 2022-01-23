@@ -14,7 +14,7 @@ func main() {
 	var opts struct {
 		CacheFile string `short:"c" long:"cache" description:"Path to cache file" required:"true" value-name:"FILE"`
 		SourceIP  string `short:"b" long:"bind" description:"IP address to bind to when sending WOL packets" value-name:"IP"`
-		Listen    string `short:"l" long:"listen" description:"Listen address" value-name:"ADDR" default:":8080"`
+		Listen    string `short:"l" long:"listen" description:"Listen address" value-name:"ADDR" default:":8580"`
 		StaticDir string `short:"s" long:"static" description:"Path to directory containing static assets" value-name:"DIR"`
 	}
 	_, err := flags.ParseArgs(&opts, os.Args)
